@@ -363,7 +363,7 @@ zen-folder:not([collapsed]) {
   transform: translateY(-0.5px);
 }
 
-@media (-moz-bool-pref: "macos.controls.reverse") {
+@media (-moz-bool-pref: "hapizen.controls.right") {
   .titlebar-buttonbox-container {
     order: 999 !important;
     margin-left: auto !important;

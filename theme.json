@@ -1,0 +1,21 @@
+{
+  "id": "hapi-zen",
+  "homepage": "https://github.com/SehajveerSingh2005/hapi-zen",
+  "author": "SehajveerSingh2005",
+  "name": "Hapi Zen",
+  "description": "a neobrutalist theme to make zen and you happy!",
+  "version": "1.0.0",
+  "createdAt": "2026-04-27",
+  "updatedAt": "2026-04-27",
+  "readme": "https://github.com/SehajveerSingh2005/hapi-zen/blob/main/README.md",
+  "image": "",
+  "tags": [
+    "Theme",
+    "Neo Brutalism",
+    "Playful",
+    "Retro",
+    "Colorful",
+    "Tactile"
+  ],
+  "fork": ["zen"]
+}
