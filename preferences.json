@@ -17,5 +17,50 @@
     "property": "hapizen.controls.right",
     "label": "Move window controls to right",
     "defaultValue": true
-  }
+  },
+  
+  {
+    "type": "separator",
+    "label": "Font Options",
+    "margin": "15px 0"
+  },
+
+  {
+    "type": "dropdown",
+    "property": "hapizen.font",
+    "label": "Font",
+    "value": "string",
+    "defaultValue": "Syne",
+    "options": [
+      {
+        "value": "Syne",
+        "label": "Syne"
+      },
+      {
+        "value": "SF-Pro",
+        "label": "SF-Pro"
+      },
+      {
+        "value": "Bricolage",
+        "label": "Bricolage"
+      },
+      {
+        "value": "JetBrainsMono",
+        "label": "JetBrains Mono"
+      },
+      {
+        "value": "Monocraft",
+        "label": "Monocraft"
+      }
+    ]
+  },
+  
+  {
+    "type": "string",
+    "property": "hapizen-font-size",
+    "processAs": "root",
+    "label": "Change font size",
+    "defaultValue": "",
+    "placeholder": "12px"
+  },
 ]

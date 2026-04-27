@@ -1,0 +1,78 @@
+:root {
+    --hapizen-font-size: unset;
+}
+
+/* Credits to Ferrocene */
+
+@media (-moz-pref("hapizen.font", "Syne")) {
+    :root {
+        --hapizen-font: "Syne";
+    }
+}
+
+@media (-moz-pref("hapizen.font", "SF-Pro")) {
+    :root {
+        --hapizen-font: "SF-Pro";
+    }
+}
+
+@media (-moz-pref("hapizen.font", "Bricolage")) {
+    :root {
+        --hapizen-font: "Bricolage";
+    }
+}
+
+@media (-moz-pref("hapizen.font", "JetBrainsMono")) {
+    :root {
+        --hapizen-font: "JetBrainsMono";
+    }
+}
+
+@media (-moz-pref("hapizen.font", "Monocraft")) {
+    :root {
+        --hapizen-font: "Monocraft";
+    }
+}
+
+@font-face {
+    font-family: "Syne";
+    src: url("https://github.com/SehajveerSingh2005/hapi-zen/raw/refs/heads/main/fonts/Syne-Regular.ttf");
+    font-weight: var(--hapizen-font_weight) !important;
+}
+
+@font-face {
+    font-family: "SF-Pro";
+    src: url("https://github.com/SehajveerSingh2005/zen-wireframe-2.0/raw/refs/heads/main/fonts/SF-Pro.ttf");
+    font-weight: var(--hapizen-font_weight) !important;
+}
+
+@font-face {
+    font-family: "Bricolage";
+    src: url("https://github.com/SehajveerSingh2005/zen-wireframe-2.0/raw/refs/heads/main/fonts/BricolageGrotesque-Regular.ttf");
+    font-weight: var(--hapizen-font_weight) !important;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "JetBrainsMono";
+    src: url("https://github.com/SehajveerSingh2005/zen-wireframe-2.0/raw/refs/heads/main/fonts/JetBrainsMono-Regular.ttf");
+    font-weight: var(--hapizen-font_weight) !important;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Monocraft";
+    src: url("https://github.com/SehajveerSingh2005/zen-wireframe-2.0/raw/refs/heads/main/fonts/Monocraft.ttf");
+    font-weight: var(--hapizen-font_weight) !important;
+    font-style: normal;
+}
+
+* {
+    font-weight: var(--hapizen-font_weight) !important;
+    font-family: var(--hapizen-font);
+}
+
+.tab-text,
+.tab-group-label{
+    font-size: var(--hapizen-font-size) !important;
+}

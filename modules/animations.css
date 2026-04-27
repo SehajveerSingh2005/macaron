@@ -1,0 +1,85 @@
+/* URLBAR LOADING ANIMATION */
+
+#urlbar {
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+/* loading overlay */
+#urlbar::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+
+  opacity: 0;
+  z-index: 0;
+  pointer-events: none;
+
+  /* subtle white wash */
+  background: rgba(255,255,255,0.12);
+
+  transition: opacity 0.2s ease;
+}
+
+#urlbar::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  border-radius: inherit;
+  opacity: 0;
+  z-index: 1;
+  pointer-events: none;
+
+  background-image:
+    linear-gradient(
+      -45deg,
+      rgba(255,255,255,0.28) 25%,
+      transparent 25%,
+      transparent 50%,
+      rgba(255,255,255,0.28) 50%,
+      rgba(255,255,255,0.28) 75%,
+      transparent 75%,
+      transparent
+    );
+
+  /* thicker stripes */
+  background-size: 42px 42px;
+
+  transition: opacity 0.2s ease;
+}
+
+
+:root:has(.tabbrowser-tab[selected][busy]) #urlbar::before,
+:root:has(.tabbrowser-tab[selected][busy]) #urlbar::after {
+  opacity: 1;
+}
+
+:root:has(.tabbrowser-tab[selected][busy]) #urlbar::after {
+  animation: hapiRibbonMove 1s linear infinite;
+}
+
+@keyframes hapiRibbonMove {
+  from {
+    background-position: 0px 0px;
+  }
+
+  to {
+    background-position: 42px 0px;
+  }
+}
+
+
+
+/* keep content above loader */
+.urlbar-input-container,
+.urlbar-input,
+#identity-box,
+#page-action-buttons {
+  position: relative !important;
+  z-index: 2 !important;
+}

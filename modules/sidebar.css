@@ -1,0 +1,198 @@
+/* -------------------------- */
+/* STATIC URL BAR (normal) */
+/* -------------------------- */
+#urlbar:not([breakout-extend="true"]) {
+  border: 2px solid currentColor !important;
+  border-radius: 10px !important;
+
+  box-shadow: 4px 4px 0px currentColor !important;
+
+  transition: transform 0.1s ease,
+              box-shadow 0.1s ease !important;
+}
+
+
+#urlbar:not([breakout-extend="true"]):active {
+  transform: translate(4px, 4px) !important;
+  box-shadow: 0px 0px 0px currentColor !important;
+}   
+
+/* -------------------------- */
+/* TABS AND ESSENTIALS */
+/* -------------------------- */
+
+/* Reset previous styling */
+tab[zen-essential="true"],
+tab[pinned="true"] {
+  border: none !important;
+  box-shadow: none !important;
+  transform: none !important;
+  border-radius: 12px !important;
+}
+
+
+/* Style actual visible tab surface */
+tab[zen-essential="true"] .tab-background,
+tab[pinned="true"] .tab-background {
+  border: 2px solid currentColor !important;
+  border-radius: 12px !important;
+  box-shadow: 4px 4px 0px currentColor !important;
+  transition: transform 0.1s ease,
+              box-shadow 0.1s ease !important;
+}
+
+
+/* Prevent overlap between pinned tabs */
+tab:not([zen-essential="true"])[pinned="true"]{
+  margin-bottom: 4px !important;
+}
+
+
+/* Push click effect */
+tab[zen-essential="true"]:active .tab-background,
+tab[pinned="true"]:active .tab-background {
+  transform: translate(4px, 4px) !important;
+  box-shadow: 0px 0px 0px currentColor !important;
+}
+
+
+/* Active tab pressed state */
+tab[selected="true"] .tab-background {
+  transform: translate(2px, 2px) !important;
+  box-shadow: 1px 1px 0px currentColor !important;
+}
+
+/* Move favicon + label together */
+tab[pinned="true"][selected="true"] .tab-icon-stack,
+tab[pinned="true"][selected="true"] .tab-label-container,
+tab[pinned="true"][selected="true"] .tab-reset-button{
+  transform: translate(2px, 2px) !important;
+}
+
+tab[pinned="true"][zen-pinned-changed="true"]:not([zen-essential="true"])[selected="true"] .tab-icon-stack{
+  transform: translate(5px, -5px) !important;
+}
+
+
+tab[pinned="true"][zen-pinned-changed="true"]:not([zen-essential="true"])[selected="true"] .tab-content .tab-reset-pin-button{
+  transform: translate(2px, 2px) !important;
+}
+
+
+
+/* -------------------------- */
+/* NORMAL TABS */
+/* -------------------------- */
+tab:not([pinned="true"]):not([zen-essential="true"]) .tab-background {
+  border: 2px solid currentColor !important;
+  border-radius: 10px !important;
+  box-shadow: 3px 3px 0px currentColor !important;
+  transition: transform 0.1s ease,
+              box-shadow 0.1s ease !important;
+  margin-bottom: 4px !important;
+}
+
+/* Click */
+tab:not([pinned="true"]):not([zen-essential="true"]):active .tab-background {
+  transform: translate(3px, 3px) !important;
+  box-shadow: 0px 0px 0px currentColor !important;
+}
+
+
+/* Selected tab */
+tab:not([pinned="true"]):not([zen-essential="true"])[selected="true"] .tab-background {
+  transform: translate(2px, 2px) !important;
+  box-shadow: 1px 1px 0px currentColor !important;
+  border-radius: 10px !important;
+}
+
+
+/* Move favicon/text slightly when selected */
+tab:not([pinned="true"]):not([zen-essential="true"])[selected="true"] .tab-content {
+  transform: translate(2px, 2px) !important;
+}
+
+/* -------------------------- */
+/* FOLDER LABEL (closed state) */
+/* -------------------------- */
+
+zen-folder[collapsed]{
+  border-radius: 12px !important;
+  transition: background 0.15s ease-in-out !important;
+  padding-right: 4px !important;
+}
+
+zen-folder[collapsed] .tab-group-label-container{
+  border: 2px solid currentColor !important;
+  border-radius: 12px !important;
+  box-shadow: 4px 4px 0px currentColor !important;
+  transition: transform 0.1s ease !important;
+  margin-bottom: 4px !important;
+}
+
+
+/* Click press effect */
+zen-folder[collapsed] .tab-group-label-container:active {
+  transform: translate(4px, 4px) !important;
+  box-shadow: 0px 0px 0px currentColor !important;
+}
+
+
+/* -------------------------- */
+/* OPEN FOLDER LABEL */
+/* stays pressed */
+/* -------------------------- */
+zen-folder:not([collapsed]) .tab-group-label-container {
+  border: 2px solid currentColor !important;
+  border-radius: 12px !important;
+  transform: translate(2px, 2px) !important;
+  box-shadow: 1px 1px 0px currentColor !important;
+}
+
+zen-folder:not([collapsed]) .tab-group-label-container > .tab-group-folder-icon{
+  transform: translate(2px, 2px) !important;
+}
+
+zen-folder:not([collapsed]) .tab-group-container {
+  margin-top: 4px !important;
+}
+
+/* Move folder content with pressed state */
+zen-folder:not([collapsed]) .tab-group-label {
+  transform: translate(2px, 2px) !important;
+}
+
+zen-folder:not([collapsed]) {
+  border-radius: 16px !important;
+/*   border: 2px solid currentColor !important;
+  box-shadow: 2px 2px 0px currentColor !important; */
+  padding-right: 4px !important;
+  margin-bottom: 2px !important;
+}
+
+/* -------------------------- */
+/* NEW TAB BUTTON */
+/* -------------------------- */
+#tabs-newtab-button {
+  border: 2px solid currentColor !important;
+  border-radius: 12px !important;
+  box-shadow: 4px 4px 0px currentColor !important;
+  transition: transform 0.1s ease !important;
+  margin-bottom: 4px !important;
+}
+
+#tabs-newtab-button .toolbarbutton-icon{
+  transform: rotate(0deg) !important;
+  transition: transform 0.4s ease-in-out !important;
+}
+
+#tabs-newtab-button[in-urlbar="true"] .toolbarbutton-icon{
+  transform: rotate(225deg) !important;
+  transition: transform 0.25s ease-in-out !important;
+}
+
+/* Click press effect */
+#tabs-newtab-button[in-urlbar="true"] {
+  transform: translate(3px, 3px) !important;
+  box-shadow: 0px 0px 0px currentColor !important;
+}

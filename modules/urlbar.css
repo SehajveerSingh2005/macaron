@@ -1,0 +1,49 @@
+/* -------------------------- */
+/* FLOATING URL BAR */
+/* -------------------------- */
+#urlbar[breakout][breakout-extend="true"] {
+  border: 3px solid currentColor !important;
+  border-radius: 12px !important;
+  box-shadow: 6px 6px 0px currentColor !important;
+  transition: transform 0.1s ease,
+              box-shadow 0.1s ease !important;
+}
+
+#urlbar[open][zen-floating-urlbar="true"][breakout][breakout-extend="true"] {
+  min-width: unset !important;
+  max-width: unset !important;
+}
+
+#urlbar[open][zen-floating-urlbar="true"][breakout][breakout-extend="true"] {
+  --zen-urlbar-width: 500px !important;
+}
+
+#urlbar[breakout][breakout-extend="true"]:active {
+  transform: translate(6px, 6px) !important;
+  box-shadow: 0px 0px 0px currentColor !important;
+}
+
+
+/* Reset inner container weirdness */
+.urlbar-input-container {
+  background: inherit !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.urlbarView-results{
+  padding-inline: 8px !important;  
+}
+
+/* Base rows */
+.urlbarView-row {
+  border: 2px solid transparent !important;
+  border-radius: 8px !important;
+  transition: all 0.1s ease !important;
+}
+
+/* Selected */
+.urlbarView-row[selected] {
+  border: 2px solid currentColor !important;
+  box-shadow: 2px 2px 0px currentColor !important;
+}
