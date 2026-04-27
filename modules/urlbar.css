@@ -9,6 +9,15 @@
               box-shadow 0.1s ease !important;
 }
 
+#urlbar[breakout][breakout-extend="true"] .urlbar-background {
+  box-shadow: none !important;
+  filter: none !important;
+}
+
+#urlbar[breakout][breakout-extend="true"] .urlbar-background {
+  border-radius: 12px !important;
+}
+
 #urlbar[open][zen-floating-urlbar="true"][breakout][breakout-extend="true"] {
   min-width: unset !important;
   max-width: unset !important;
@@ -29,6 +38,14 @@
   background: inherit !important;
   border: none !important;
   box-shadow: none !important;
+}
+
+.urlbarView,
+.urlbarView-body-outer,
+.urlbarView-body-inner,
+.urlbarView-results {
+  border-radius: inherit !important;
+  overflow: hidden !important;
 }
 
 .urlbarView-results{

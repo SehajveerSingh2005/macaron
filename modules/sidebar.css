@@ -30,6 +30,16 @@ tab[pinned="true"] {
   border-radius: 12px !important;
 }
 
+tab[zen-essential="true"] .tab-background:before{
+  display: none !important;
+}
+
+tab[zen-essential="true"] .tab-background:after{
+/*   background: var(--tab-selected-bgcolor) !important; */
+  opacity: 0.5 !important;
+}
+
+
 
 /* Style actual visible tab surface */
 tab[zen-essential="true"] .tab-background,

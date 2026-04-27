@@ -1,6 +1,6 @@
 /* URLBAR LOADING ANIMATION */
 
-#urlbar {
+#urlbar:not([breakout-extend="true"]) {
   position: relative !important;
   overflow: hidden !important;
 }
@@ -82,4 +82,21 @@
 #page-action-buttons {
   position: relative !important;
   z-index: 2 !important;
+}
+
+/* urlbar entry animation */
+
+#urlbar[breakout][breakout-extend="true"] {
+  border: 3px solid currentColor !important;
+  border-radius: 12px !important;
+
+  box-shadow: 0px 0px 0px currentColor !important;
+
+  transition:
+    box-shadow 0.18s cubic-bezier(0.2, 0.8, 0.4, 1) 0.05s,
+    opacity 0.12s ease !important;
+}
+
+#urlbar[open][breakout][breakout-extend="true"] {
+  box-shadow: 6px 6px 0px currentColor !important;
 }
