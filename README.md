@@ -21,10 +21,7 @@ Built for people who think browsers should have personality.
 
 > *"what if Nintendo made a browser for designers?"*
 
-```md
-![preview-1](./assets/preview-1.png)
-![preview-2](./assets/preview-2.png)
-```
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/165f45e4-d5b9-48c0-a268-9081472d2f6b" />
 
 ---
 
