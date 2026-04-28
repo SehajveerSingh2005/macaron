@@ -1,7 +1,7 @@
 [
   {
     "type": "text",
-    "label": "Hapi Zen",
+    "label": "Macaron",
     "size": "20px",
     "margin": "20px 0 30px 0"
   },
@@ -21,9 +21,30 @@
   
   {
     "type": "separator",
-    "label": "Font Options",
+    "label": "Webview Settings",
     "margin": "15px 0"
   },
+  
+  {
+    "type": "checkbox",
+    "property": "mac.blank.checkboard",
+    "label": "Enable checkboard patern on blank page",
+    "defaultValue": true
+  },
+  
+  {
+    "type": "separator",
+    "label": "Sidebar Settings",
+    "margin": "15px 0"
+  },
+  
+  {
+    "type": "checkbox",
+    "property": "mac.navbuttons.disabled",
+    "label": "Disable navigation buttons",
+    "defaultValue": true
+  },
+  
 
   {
     "type": "dropdown",
@@ -63,4 +84,19 @@
     "defaultValue": "",
     "placeholder": "12px"
   },
+  
+  {
+    "type": "separator",
+    "label": "Border Settings",
+    "margin": "15px 0"
+  },
+
+  {
+    "type": "string",
+    "property": "mac-border-radius",
+    "processAs": "root",
+    "label": "Change browser border radius (only change if manipulating windows border radius)",
+    "defaultValue": "8px",
+    "placeholder": "8px"
+  }
 ]
