@@ -40,7 +40,6 @@ tab[zen-essential="true"] .tab-background:after{
 }
 
 
-
 /* Style actual visible tab surface */
 tab[zen-essential="true"] .tab-background,
 tab[pinned="true"] .tab-background {
@@ -129,7 +128,7 @@ tab:not([pinned="true"]):not([zen-essential="true"])[selected="true"] .tab-conte
 zen-folder[collapsed]{
   border-radius: 12px !important;
   transition: background 0.15s ease-in-out !important;
-  padding-right: 4px !important;
+  padding-inline: 3px !important;
 }
 
 zen-folder[collapsed] .tab-group-label-container{
@@ -205,4 +204,101 @@ zen-folder:not([collapsed]) {
 #tabs-newtab-button[in-urlbar="true"] {
   transform: translate(3px, 3px) !important;
   box-shadow: 0px 0px 0px currentColor !important;
+}
+
+/* -------------------------- */
+/* sidebar buttons */
+/* -------------------------- */
+
+@media (-moz-pref("mac.navbuttons.disabled")) {
+  #zen-sidebar-top-buttons #back-button,
+  #zen-sidebar-top-buttons #forward-button {
+    display: none !important;
+  }
+}
+
+
+/* -------------------------- */
+/* compact sidebar */
+/* -------------------------- */
+
+:root[zen-compact-mode="true"] #titlebar {
+  border: 2px solid currentColor !important;
+  box-shadow: 4px 4px 0 currentColor !important;
+  border-radius: var(--zen-border-radius) !important;
+
+  margin: 16px !important;
+  overflow: hidden !important;
+
+  transition:
+    transform 0.12s ease,
+    box-shadow 0.12s ease !important;
+}
+
+:root[zen-compact-mode="true"] #titlebar:hover {
+  box-shadow: 1px 1px 0 currentColor !important;
+  transform: translate(3px, 3px) !important;
+}
+
+/* move urlbar when titlebar hovered */
+:root[zen-compact-mode="true"]:has(#titlebar:hover) #urlbar {
+  transform: translate(3px, 3px) !important;
+  transition: transform 0.12s ease !important;
+}
+
+/* MINI PLAYER */
+
+#zen-media-controls-toolbar .show-on-hover {
+    max-height: 50px !important;
+    padding: 5px !important;
+    margin-bottom: 0 !important;
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    pointer-events: auto !important;
+}
+
+#zen-media-controls-toolbar{
+  border: 2px solid currentColor !important;
+  border-radius: 14px !important;
+  overflow: hidden !important;
+  padding: 8px !important;
+  margin-inline: 6px !important;
+  background: var(--zen-primary-color) !important;
+}
+
+#zen-media-controls-toolbar {
+  box-shadow: 1px 1px 0 currentColor !important;
+  transform: translate(2px, 2px) !important;
+  transition:
+    transform 0.12s ease,
+    box-shadow 0.12s ease !important;
+}
+
+#zen-media-controls-toolbar.playing {
+  box-shadow: 3px 3px 0 currentColor !important;
+  transform: translate(0px, 0px) !important;
+}
+
+#zen-media-close-button {
+  opacity: 0 !important;
+  pointer-events: none !important;
+
+  transition: opacity 0.12s ease !important;
+}
+
+#zen-media-controls-toolbar:hover #zen-media-close-button {
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+
+#zen-media-progress-bar{
+  --progress-height: 8px !important;
+}
+
+#zen-media-controls-hbox {
+  justify-content: center !important;
+}
+
+#zen-media-mute-button {
+  display: none !important;
 }
