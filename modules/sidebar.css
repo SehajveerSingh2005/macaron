@@ -137,6 +137,11 @@ zen-folder[collapsed] .tab-group-label-container{
   box-shadow: 4px 4px 0px currentColor !important;
   transition: transform 0.1s ease !important;
   margin-bottom: 4px !important;
+  background: color-mix(
+    in srgb,
+    var(--zen-primary-color) 60%,
+    #fff1d6 40%
+  ) !important;
 }
 
 
