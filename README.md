@@ -1,25 +1,25 @@
-# Hapi Zen
+# Macaron
 
 **A playful neo-brutalist theme for Zen Browser.**
 
-Hapi Zen turns Zen Browser into something that feels less like software and more like a tiny collectible device sitting on your desktop.
+Macaron turns Zen Browser into something that feels less like software and more like a tiny collectible device sitting on your desktop.
 
 Think:
 
-* chunky borders
-* hard shadows
-* tactile press animations
-* squircle macOS controls
-* playful folder interactions
-* warm retro UI energy
+- chunky borders  
+- tactile shadows  
+- candy-striped loading animations  
+- playful checkerboard blank tabs  
+- squircle macOS controls  
+- retro gadget energy  
 
-Built for people who think browsers should have personality.
+Built for people who think browsers should feel fun again.
 
 ---
 
 ## Preview
 
-> *"what if Nintendo made a browser for designers?"*
+> *"what if Nintendo and Teenage Engineering made a browser for designers?"*
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/165f45e4-d5b9-48c0-a268-9081472d2f6b" />
 
@@ -27,7 +27,13 @@ Built for people who think browsers should have personality.
 
 Everything behaves like physical UI.
 
-Click things and they feel pressed into the screen.
+Tabs pop.  
+Buttons feel tactile.  
+The URL bar loads like candy wrapping moving across glass.
+
+It’s weird.
+
+In a good way.
 
 ---
 
@@ -39,21 +45,21 @@ Install easily through **Sine**, a modern mod manager for Firefox-based browsers
 
 Download and install Sine.
 
-### 2. Add Hapi Zen
+### 2. Add Macaron
 
-Search for **Hapi Zen** in the Sine store
+Search for **Macaron**
 
 **or**
 
-Paste this into the custom mod input:
+paste this into custom mod input:
 
 ```bash
-SehajveerSingh2005/hapi-zen
+SehajveerSingh2005/macaron
 ```
 
 ### 3. Apply Theme
 
-Enable Hapi Zen from your installed mods.
+Enable Macaron from your installed mods.
 
 Done.
 
@@ -65,7 +71,7 @@ No more manually digging through `about:profiles` like you're entering forbidden
 
 Most browser themes try to disappear.
 
-Hapi Zen does the opposite.
+Macaron does the opposite.
 
 It leans into playful imperfection.
 It feels tactile.
@@ -90,12 +96,6 @@ And that felt... boring.
 
 ---
 
-## License
+**Macaron**
 
-MIT
-
----
-
-**Hapi Zen**
-
-*make your browser a little less serious.*
+*your browser deserves more whimsy!*
