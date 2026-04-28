@@ -46,7 +46,7 @@ menuseparator {
 /* BLANK TAB CHECKERBOARD */
 /* -------------------------- */
 
-@media (-moz-pref("mac.blank,checkboard")) {
+@media (-moz-pref("mac.blank.checkboard")) {
     #browser:has([zen-empty-tab="true"][selected="true"]) .browserStack {
     
       background-image:
