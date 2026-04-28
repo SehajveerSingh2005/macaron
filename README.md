@@ -21,7 +21,12 @@ Built for people who think browsers should feel fun again.
 
 > *"what if Nintendo and Teenage Engineering made a browser for designers?"*
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/165f45e4-d5b9-48c0-a268-9081472d2f6b" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e5377ec5-e385-496b-bab2-d863b8de4bd9" />
+<br>
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2625bc55-bf36-4652-9533-478278f4bc55" />
+<br>
+<img width="1920" height="1080" alt="Screenshot (194)" src="https://github.com/user-attachments/assets/547d2b6b-5719-4967-a115-f20017e4aedb" />
+<br>
 
 ---
 
