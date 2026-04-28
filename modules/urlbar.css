@@ -40,8 +40,16 @@
   box-shadow: none !important;
 }
 
+#urlbar[open] .urlbar-input-container{
+   padding-inline: 22px !important; 
+}
+
+#urlbar[open] > .urlbarView > .urlbarView-body-outer {
+  border-top: 2px solid currentColor !important;
+}
+
+
 .urlbarView,
-.urlbarView-body-outer,
 .urlbarView-body-inner,
 .urlbarView-results {
   border-radius: inherit !important;
