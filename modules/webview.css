@@ -1,0 +1,71 @@
+#zen-browser-background{
+  border: 3px solid currentColor !important;
+  border-radius: var(--mac-border-radius) !important;
+}
+
+#tabbrowser-tabbox {
+  border: 2px solid currentColor !important;
+  border-radius: var(--zen-border-radius) !important;
+  box-shadow: 3px 3px 0px currentColor !important;
+  transition: box-shadow 0.12s ease !important;
+  overflow: hidden !important;
+}
+
+#tabbrowser-tabpanels,
+.browserSidebarContainer{
+  overflow: visible !important;
+}
+
+.tabbrowser-tab[selected] {
+  animation: hapiTabSwitch 0.12s ease !important;
+}
+
+@keyframes hapiTabSwitch {
+  0% {
+    transform: scale(0.97);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* actual popup shell */
+menupopup{
+  border: 2px solid currentColor !important;
+  border-radius: var(--mac-border-radius) !important;
+  background: var(--zen-primary-color) !important;
+  
+}
+
+menuseparator {
+  border-top: 2px solid currentColor !important;
+}
+
+/* -------------------------- */
+/* BLANK TAB CHECKERBOARD */
+/* -------------------------- */
+
+@media (-moz-pref("mac.blank,checkboard")) {
+    #browser:has([zen-empty-tab="true"][selected="true"]) .browserStack {
+    
+      background-image:
+        linear-gradient(
+          45deg,
+          rgba(255,255,255,0.5) 25%,
+          transparent 25%,
+          transparent 75%,
+          rgba(255,255,255,0.5) 75%
+        ),
+        linear-gradient(
+          45deg,
+          rgba(255,255,255,0.5) 25%,
+          transparent 25%,
+          transparent 75%,
+          rgba(255,255,255,0.5) 75%
+        ) !important;
+    
+      background-size: 80px 80px !important;
+      background-position: 0 0, 40px 40px !important;
+    } 
+}
