@@ -27,10 +27,10 @@
   padding: 0 !important;
   margin: 0 !important;
 
-  border: 2px solid currentColor !important;
+  border: 1.5px solid currentColor !important;
   border-radius: 35% !important; /* squircle */
 
-  box-shadow: 2px 2px 0px currentColor !important;
+  box-shadow: 1.5px 1.5px 0px currentColor !important;
 
   display: flex !important;
   align-items: center !important;
@@ -57,19 +57,19 @@
 
 /* macOS colors */
 .titlebar-close {
-  background: #FE6254 !important;
+  background: #ff7b6e !important;
   order: 1 !important;
 }
 
 .titlebar-min {
-  background: #FDC92D !important;
-  order: 2 !important;
+  background: #ffd65c !important;
+  order: 3 !important;
 }
 
 .titlebar-max,
 .titlebar-restore {
-  background: #28D33F !important;
-  order: 3 !important;
+  background: #59d86a !important;
+  order: 2 !important;
 }
 
 
