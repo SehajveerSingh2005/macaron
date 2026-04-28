@@ -1,6 +1,7 @@
 /* URLBAR LOADING ANIMATION */
 
 #urlbar:not([breakout-extend="true"]) {
+  background: var(--toolbar-bgcolor) !important;
   position: relative !important;
   overflow: hidden !important;
 }
@@ -19,9 +20,6 @@
   z-index: 0;
   pointer-events: none;
 
-  /* subtle white wash */
-  background: rgba(255,255,255,0.12);
-
   transition: opacity 0.2s ease;
 }
 
@@ -38,14 +36,30 @@
   background-image:
     linear-gradient(
       -45deg,
-      rgba(255,255,255,0.28) 25%,
+      color-mix(
+        in srgb,
+        var(--zen-primary-color) 75%,
+        white 25%
+      ) 25%,
+
       transparent 25%,
       transparent 50%,
-      rgba(255,255,255,0.28) 50%,
-      rgba(255,255,255,0.28) 75%,
+
+      color-mix(
+        in srgb,
+        var(--zen-primary-color) 75%,
+        white 25%
+      ) 50%,
+
+      color-mix(
+        in srgb,
+        var(--zen-primary-color) 75%,
+        white 25%
+      ) 75%,
+
       transparent 75%,
       transparent
-    );
+    ) !important;
 
   /* thicker stripes */
   background-size: 42px 42px;
