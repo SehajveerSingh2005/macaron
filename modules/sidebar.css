@@ -15,7 +15,12 @@
 #urlbar:not([breakout-extend="true"]):active {
   transform: translate(4px, 4px) !important;
   box-shadow: 0px 0px 0px currentColor !important;
-}   
+}
+
+/*to align the sidebar */
+#navigator-toolbox {
+  padding-right: 2px !important;
+}
 
 /* -------------------------- */
 /* TABS AND ESSENTIALS */
@@ -64,6 +69,12 @@ tab[pinned="true"]:active .tab-background {
   box-shadow: 0px 0px 0px currentColor !important;
 }
 
+/* re-click small press effect */
+tab[zen-essential="true"][selected="true"]:active .tab-background,
+tab[pinned="true"][selected="true"]:active .tab-background {
+  transform: translate(3px, 3px) !important;
+  box-shadow: 0px 0px 0px currentColor !important;
+}
 
 /* Active tab pressed state */
 tab[selected="true"] .tab-background {
@@ -88,6 +99,13 @@ tab[pinned="true"][zen-pinned-changed="true"]:not([zen-essential="true"])[select
 }
 
 
+tab[pinned="true"][selected="true"]:active .tab-icon-stack,
+tab[pinned="true"][selected="true"]:active .tab-label-container,
+tab[pinned="true"][selected="true"]:active .tab-reset-button,
+tab[zen-essential="true"][selected="true"]:active .tab-icon-stack {
+  transform: translate(3px, 3px) !important;
+}
+
 
 /* -------------------------- */
 /* NORMAL TABS */
@@ -107,14 +125,12 @@ tab:not([pinned="true"]):not([zen-essential="true"]):active .tab-background {
   box-shadow: 0px 0px 0px currentColor !important;
 }
 
-
 /* Selected tab */
 tab:not([pinned="true"]):not([zen-essential="true"])[selected="true"] .tab-background {
   transform: translate(2px, 2px) !important;
   box-shadow: 1px 1px 0px currentColor !important;
   border-radius: 10px !important;
 }
-
 
 /* Move favicon/text slightly when selected */
 tab:not([pinned="true"]):not([zen-essential="true"])[selected="true"] .tab-content {
@@ -232,7 +248,7 @@ zen-folder:not([collapsed]) {
   box-shadow: 4px 4px 0 currentColor !important;
   border-radius: var(--zen-border-radius) !important;
 
-  margin: 16px !important;
+  margin: 16px 16px 20px 16px !important;
   overflow: hidden !important;
 
   transition:
@@ -249,6 +265,11 @@ zen-folder:not([collapsed]) {
 :root[zen-compact-mode="true"]:has(#titlebar:hover) #urlbar {
   transform: translate(3px, 3px) !important;
   transition: transform 0.12s ease !important;
+}
+
+/*to align the sidebar */
+:root[zen-compact-mode="true"] #titlebar {
+  padding-right: 6px !important;
 }
 
 /* MINI PLAYER */
@@ -306,4 +327,24 @@ zen-folder:not([collapsed]) {
 
 #zen-media-mute-button {
   display: none !important;
+}
+
+/* sidebar top buttons */
+
+#zen-sidebar-top-buttons-customization-target #PanelUI-menu-button image {
+  transform: rotate(90deg) !important;
+}
+
+#zen-sidebar-top-buttons-customization-target #reload-button image{
+  transform: rotate(0deg) !important;
+  transition: transform 0.12s ease !important;
+}
+
+#zen-sidebar-top-buttons-customization-target #reload-button:hover image{
+  background-color: transparent !important;
+}
+
+#zen-sidebar-top-buttons-customization-target #reload-button:hover image{
+  transform: rotate(180deg) !important;
+  transition: transform 0.12s ease !important;
 }
