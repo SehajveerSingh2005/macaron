@@ -3,7 +3,7 @@
 **A playful neo-brutalist theme for Zen Browser.**
 
 
-<img width="3000" height="1505" alt="Macharon_Zen" src="https://github.com/user-attachments/assets/6444f9ff-2208-49fa-9745-a7aab74b0396" />
+<img width="3000" height="1369" alt="Macharon" src="https://github.com/user-attachments/assets/06ee3775-4df1-4288-a057-71532673bc20" />
 <br>
 
 Macaron turns Zen Browser into something that feels less like software and more like a tiny collectible device sitting on your desktop.
