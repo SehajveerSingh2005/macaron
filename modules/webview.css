@@ -1,6 +1,6 @@
 #zen-browser-background{
   border: 2px solid light-dark(black, white) !important;
-  border-radius: var(--mac-border-radius) !important;
+  border-radius: var(--mac-border-radius, 8px) !important;
 }
 
 #tabbrowser-tabbox {
@@ -58,7 +58,7 @@
 /* CONTEXT MENU */
 menupopup{
   border: 2px solid currentColor !important;
-  border-radius: var(--mac-border-radius) !important;
+  border-radius: var(--mac-border-radius, 8px) !important;
   background: var(--zen-primary-color) !important;
 }
 
