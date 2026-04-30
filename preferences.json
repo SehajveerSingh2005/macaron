@@ -31,7 +31,13 @@
     "label": "Disable navigation buttons",
     "defaultValue": true
   },
-  
+
+  {
+    "type": "checkbox",
+    "property": "mac.doodles",
+    "label": "Enable doodles!",
+    "defaultValue": false
+  },
 
   {
     "type": "dropdown",
