@@ -3,7 +3,7 @@
 **A playful neo-brutalist theme for Zen Browser.**
 
 
-<img width="3000" height="1505" alt="Macharon_Zen" src="https://github.com/user-attachments/assets/6444f9ff-2208-49fa-9745-a7aab74b0396" />
+<img width="3000" height="1505" alt="Macharon_Zen" src="https://github.com/user-attachments/assets/08be252f-6bca-4dde-9429-52f676ac854b" />
 <br>
 
 Macaron turns Zen Browser into something that feels less like software and more like a tiny collectible device sitting on your desktop.
@@ -24,6 +24,8 @@ Built for people who think browsers should feel fun again.
 ## Preview
 
 > *"what if Nintendo and Teenage Engineering made a browser for designers?"*
+
+<video src="https://github.com/user-attachments/assets/325802dd-5c38-43c8-888a-7350a455434f"></video>
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e5377ec5-e385-496b-bab2-d863b8de4bd9" />
 <br>
