@@ -18,6 +18,15 @@
     "label": "Enable checkboard patern on blank page",
     "defaultValue": true
   },
+
+  {
+    "type": "string",
+    "property": "mac-checkboard-opacity",
+    "processAs": "root",
+    "label": "Checkboard opacity",
+    "defaultValue": "0.35",
+    "placeholder": "0.35"
+  },
   
   {
     "type": "separator",
