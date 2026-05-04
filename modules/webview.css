@@ -1,7 +1,22 @@
-#zen-browser-background{
+/*window border */
+
+:root[sizemode="normal"] #zen-browser-background{
   border: 2px solid light-dark(black, white) !important;
   border-radius: var(--mac-border-radius, 8px) !important;
 }
+
+:root[sizemode="maximized"] #zen-browser-background{
+  border: 2px solid light-dark(black, white) !important;
+}
+
+@media (-moz-pref("mac-max.roundcorners")){
+  :root[sizemode="maximized"] #zen-browser-background{
+    border-top-left-radius: var(--mac-border-radius, 8px) !important;
+    border-top-right-radius: var(--mac-border-radius, 8px) !important;
+  }
+}
+
+/* webview border */
 
 #tabbrowser-tabbox {
   border: none !important;
