@@ -100,5 +100,12 @@
     "label": "Change browser border radius (only change if manipulating windows border radius)",
     "defaultValue": "8px",
     "placeholder": "8px"
+  },
+
+  {
+    "type": "checkbox",
+    "property": "mac-max.roundcorners",
+    "label": "Enable round corners for maximised windows",
+    "defaultValue": false
   }
 ]
