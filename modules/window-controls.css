@@ -72,6 +72,19 @@
   order: 2 !important;
 }
 
+@media (-moz-platform: macos) {
+  .titlebar-buttonbox-container {
+    margin-left: 8px !important;
+    margin-right: 8px !important;
+    order: -1 !important;
+  }
+
+  .titlebar-close { order: 1 !important; }
+  .titlebar-max,
+  .titlebar-restore { order: 2 !important; }
+  .titlebar-min { order: 3 !important; }
+}
+
 
 /* Press effect */
 .titlebar-button:active {
