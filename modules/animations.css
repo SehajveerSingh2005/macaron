@@ -7,7 +7,7 @@
 }
 
 /* loading overlay */
-#urlbar::before {
+#urlbar:not([breakout-extend="true"])::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -23,7 +23,7 @@
   transition: opacity 0.2s ease;
 }
 
-#urlbar::after {
+#urlbar:not([breakout-extend="true"])::after {
   content: "";
   position: absolute;
   inset: 0;
