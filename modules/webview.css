@@ -1,12 +1,19 @@
 /*window border */
 
-:root[sizemode="normal"] #zen-browser-background{
+:root[sizemode="normal"] #zen-browser-background {
   border: 2px solid light-dark(black, white) !important;
   border-radius: var(--mac-border-radius, 8px) !important;
 }
 
-:root[sizemode="maximized"] #zen-browser-background{
+:root[sizemode="maximized"] #zen-browser-background {
   border: 2px solid light-dark(black, white) !important;
+}
+
+:root[sizemode="fullscreen"][inDOMFullscreen="true"] #tabbrowser-tabpanels {
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  margin: 0 !important;
 }
 
 @media (-moz-pref("mac-max.roundcorners")){
