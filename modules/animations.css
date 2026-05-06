@@ -1,13 +1,13 @@
 /* URLBAR LOADING ANIMATION */
 
-#urlbar:not([breakout-extend="true"]) {
+:root:not([inDOMFullscreen="true"]) #urlbar:not([breakout-extend="true"]) {
   background: var(--toolbar-bgcolor) !important;
   position: relative !important;
   overflow: hidden !important;
 }
 
 /* loading overlay */
-#urlbar:not([breakout-extend="true"])::before {
+:root:not([inDOMFullscreen="true"]) #urlbar:not([breakout-extend="true"])::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -23,7 +23,7 @@
   transition: opacity 0.2s ease;
 }
 
-#urlbar:not([breakout-extend="true"])::after {
+:root:not([inDOMFullscreen="true"]) #urlbar:not([breakout-extend="true"])::after {
   content: "";
   position: absolute;
   inset: 0;

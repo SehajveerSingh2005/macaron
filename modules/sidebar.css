@@ -1,7 +1,7 @@
 /* -------------------------- */
 /* STATIC URL BAR (normal) */
 /* -------------------------- */
-#urlbar:not([breakout-extend="true"]) {
+:root:not([inDOMFullscreen="true"]) #urlbar:not([breakout-extend="true"]) {
   border: 2px solid currentColor !important;
   border-radius: 10px !important;
 
