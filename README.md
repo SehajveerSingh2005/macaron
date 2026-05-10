@@ -21,6 +21,17 @@ Built for people who think browsers should feel fun again.
 
 ---
 
+## Local Options
+
+- Accent presets: Strawberry, Pistachio, Blueberry, Vanilla, Matcha.
+- Shadow intensity: None, Soft, Classic, Chunky.
+- Browser spacing: Macaron, Tight, Marginless.
+- Macaron URL bar popup styling.
+- Doodle pack: Coffee, Star, Flower, None.
+- Reduced motion toggle.
+
+---
+
 ## Preview
 
 > *"what if Nintendo and Teenage Engineering made a browser for designers?"*
