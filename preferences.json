@@ -5,6 +5,48 @@
     "size": "20px",
     "margin": "20px 0 30px 0"
   },
+
+  {
+    "type": "separator",
+    "label": "Visual Style",
+    "margin": "15px 0"
+  },
+
+  {
+    "type": "dropdown",
+    "property": "mac.accent-preset",
+    "label": "Accent preset",
+    "value": "string",
+    "defaultValue": "strawberry",
+    "options": [
+      { "value": "strawberry", "label": "Strawberry" },
+      { "value": "pistachio", "label": "Pistachio" },
+      { "value": "blueberry", "label": "Blueberry" },
+      { "value": "vanilla", "label": "Vanilla" },
+      { "value": "matcha", "label": "Matcha" }
+    ]
+  },
+
+  {
+    "type": "dropdown",
+    "property": "mac.shadow-level",
+    "label": "Shadow intensity",
+    "value": "number",
+    "defaultValue": 2,
+    "options": [
+      { "value": 0, "label": "None" },
+      { "value": 1, "label": "Soft" },
+      { "value": 2, "label": "Classic" },
+      { "value": 3, "label": "Chunky" }
+    ]
+  },
+
+  {
+    "type": "checkbox",
+    "property": "mac.urlbar-popup",
+    "label": "Enable Macaron URL bar popup",
+    "defaultValue": true
+  },
   
   {
     "type": "separator",
@@ -27,6 +69,25 @@
     "defaultValue": "0.35",
     "placeholder": "0.35"
   },
+
+  {
+    "type": "separator",
+    "label": "Browser Layout",
+    "margin": "15px 0"
+  },
+
+  {
+    "type": "dropdown",
+    "property": "mac.marginless-mode",
+    "label": "Browser spacing",
+    "value": "number",
+    "defaultValue": 0,
+    "options": [
+      { "value": 0, "label": "Macaron" },
+      { "value": 1, "label": "Tight" },
+      { "value": 2, "label": "Marginless" }
+    ]
+  },
   
   {
     "type": "separator",
@@ -45,6 +106,27 @@
     "type": "checkbox",
     "property": "mac.doodles",
     "label": "Enable doodles!",
+    "defaultValue": false
+  },
+
+  {
+    "type": "dropdown",
+    "property": "mac.doodle-pack",
+    "label": "Doodle pack",
+    "value": "string",
+    "defaultValue": "coffee",
+    "options": [
+      { "value": "coffee", "label": "Coffee" },
+      { "value": "star", "label": "Star" },
+      { "value": "flower", "label": "Flower" },
+      { "value": "none", "label": "None" }
+    ]
+  },
+
+  {
+    "type": "checkbox",
+    "property": "mac.reduced-motion",
+    "label": "Reduce motion",
     "defaultValue": false
   },
 

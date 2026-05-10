@@ -1,0 +1,84 @@
+/* Marginless browser mode */
+
+@media (-moz-pref("mac.marginless-browser")), (-moz-pref("mac.marginless-mode", 2)) {
+  :root {
+    --zen-element-separation: 0px !important;
+    --zen-webview-border-radius: 0px !important;
+  }
+
+  :root:not([inDOMFullscreen="true"]) #zen-browser-background {
+    border: 0 !important;
+    border-radius: 0 !important;
+  }
+
+  #browser,
+  #tabbrowser-tabbox,
+  #tabbrowser-tabpanels,
+  #tabbrowser-tabpanels > .browserSidebarContainer,
+  .browserSidebarContainer,
+  .browserStack {
+    margin: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+
+  #tabbrowser-tabpanels {
+    border: 0 !important;
+    overflow: hidden !important;
+  }
+
+  #tabbrowser-tabpanels > .browserSidebarContainer,
+  .browserSidebarContainer {
+    overflow: hidden !important;
+  }
+
+  :root:not([zen-compact-mode="true"]) #navigator-toolbox {
+    padding-right: 0 !important;
+  }
+
+  :root[zen-compact-mode="true"] #titlebar {
+    margin: 0 !important;
+    border-radius: 0 !important;
+  }
+
+  :root[zen-compact-mode="true"] #titlebar:hover,
+  :root[zen-compact-mode="true"]:has(#titlebar:hover) #urlbar {
+    transform: none !important;
+  }
+
+  :root:has(.tabbrowser-tab:active) #tabbrowser-tabpanels {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+}
+
+@media (-moz-pref("mac.marginless-mode", 1)) {
+  :root {
+    --zen-element-separation: 4px !important;
+    --zen-webview-border-radius: 6px !important;
+  }
+
+  :root:not([inDOMFullscreen="true"]) #zen-browser-background {
+    border-width: 1px !important;
+    border-radius: 6px !important;
+  }
+
+  #tabbrowser-tabpanels {
+    margin-right: 1px !important;
+    margin-bottom: 1px !important;
+    border-width: 1px !important;
+    border-radius: 6px !important;
+    box-shadow: 1px 1px 0 currentColor !important;
+  }
+
+  .browserSidebarContainer,
+  .browserStack {
+    border-radius: 6px !important;
+  }
+
+  :root[zen-compact-mode="true"] #titlebar {
+    margin: 6px !important;
+    border-radius: 6px !important;
+    box-shadow: 1px 1px 0 currentColor !important;
+  }
+}
