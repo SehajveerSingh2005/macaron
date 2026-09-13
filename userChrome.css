@@ -11,3 +11,7 @@
 @import url("modules/style-options.css");
 @import url("modules/findbar.css");
 @import url("modules/statusbar.css");
+
+:root{
+  --macaron-outline: light-dark(currentColor, rgba(255,255,255,0.5));
+}
